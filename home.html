@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Piano</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="logic-control.js"></script>
+</head>
+<body>
+    <h1>Coco Piano</h1>
+    <!-- Note:
+            1. Pianos notes/keys are divided in octaves. This means the starting note of one octave has half the frequency of the starting note of the next octave.
+            2. Each octave has 8 major notes (white keys) and 5 sharp notes (black keys). -> 12 notes in total
+            3. We usually start the octave from A. (A, A#, B, C, C#, D, D#, E, F, F#, G, G#) But, starting from C is also possible.
+            4. Each octave is divided to equal 11 frequency intervals.
+            5. I started from the 4th octave as it is in the middle of common pianos.
+            6. ------
+    -->
+    <div class="Piano-Box">
+        <!-- Octave 4  = Contains 12 notes (7 major(whites), and 5 sharp (blacks) notes) -->
+        <div data-note="C4" class="key white">C4</div>
+        <div data-note="C-SH4" class="key black"></div>
+        <div data-note="D4" class="key white"></div>
+        <div data-note="D-SH4" class="key black"></div>
+        <div data-note="E4" class="key white block-edge"></div>
+        <div data-note="F4" class="key white"></div>
+        <div data-note="F-SH4" class="key black"></div> 
+        <div data-note="G4" class="key white"></div>
+        <div data-note="G-SH4" class="key black"></div>
+        <div data-note="A4" class="key white"></div>
+        <div data-note="A-SH4" class="key black"></div>
+        <div data-note="B4" class="key white block-edge"></div>
+
+
+        <!-- Octave 5 -->
+        <div data-note="C5" class="key white">C5</div>
+        <div data-note="C-SH5" class="key black"></div>
+        <div data-note="D5" class="key white"></div>
+        <div data-note="D-SH5" class="key black"></div>
+        <div data-note="E5" class="key white block-edge"></div>
+        <div data-note="F5" class="key white"></div>
+        <div data-note="F-SH5" class="key black"></div>
+        <div data-note="G5" class="key white"></div>
+        <div data-note="G-SH5" class="key black"></div>
+        <div data-note="A5" class="key white"></div>
+        <div data-note="A-SH5" class="key black"></div>
+        <div data-note="B5" class="key white block-edge"></div>
+
+        
+        <!-- Octave 6 -->
+        <div data-note="C6" class="key white">C6</div>
+        <div data-note="C-SH6" class="key black"></div>
+        <div data-note="D6" class="key white"></div>
+        <div data-note="D-SH6" class="key black"></div>
+        <div data-note="E6" class="key white block-edge"></div>
+        <div data-note="F6" class="key white"></div>
+        <div data-note="F-SH6" class="key black"></div>
+        <div data-note="G6" class="key white"></div>
+        <div data-note="G-SH6" class="key black"></div>
+        <div data-note="A6" class="key white"></div>
+        <div data-note="A-SH6" class="key black"></div>
+        <div data-note="B6" class="key white block-edge"></div>
+
+        <div data-note="C7" class="key white">C7</div>
+        
+
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+:root{
+    --number_of_keys : 25;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    align-items: center;
+    justify-content: stretch;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Dancing Script', cursive  ;
+    background-color: grey;    
+
+    background-image: url("Piano_background-2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+h1{
+    color: whitesmoke;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-size: 3rem;
+    background: linear-gradient()
+}
+
+.Piano-Box {
+    align-items: center;
+    height: min(45vh, 450px);
+    width: max(80vw, 600px);
+    background-color: burlywood;
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+}
+
+.key{
+    border-color: black;
+    border-width: .5px;
+    width: 5%;
+    height: 100%;
+    border-style: solid;
+}
+
+.white{
+    background-color: white;
+}
+
+.black {
+    position: relative;
+    top: -25%;
+    z-index: 1;
+    height:50%;
+    width: 3%;
+    margin-left: -2%;
+    margin-right: -2%;
+    background-color: black;
+}
+
+.block-edge {
+    border-right-width: 0px;
+}
